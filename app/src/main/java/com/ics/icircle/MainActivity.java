@@ -14,5 +14,5 @@ public class MainActivity extends AppCompatActivity {
         //placing toolbar in place of actionbar
         setSupportActionBar(toolbar);
     }
-    
+
 }
