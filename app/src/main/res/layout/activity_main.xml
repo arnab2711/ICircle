@@ -8,6 +8,11 @@
     android:fitsSystemWindows="true"
     tools:context="com.ics.icircle.MainActivity">
 
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +26,8 @@
             android:background="@android:color/white"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:titleTextColor="@color/startBlue"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:elevation="4dp">
         </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
@@ -140,9 +146,10 @@
             android:layout_height="wrap_content"
             android:text="Edit Profile"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
         <include layout="@layout/content_profile"/>
 
     </LinearLayout>
@@ -156,11 +163,13 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Follow Me"/>
+            android:text="Follow"/>
 
 
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
